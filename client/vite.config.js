@@ -7,7 +7,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api/':{
-        target:"${window.location.origin}"
+        target:`${window.location.origin}`
       }
     }
   }
