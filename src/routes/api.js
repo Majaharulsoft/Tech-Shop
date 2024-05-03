@@ -27,7 +27,7 @@ router.get('/ProductListByKeyword/:Keyword',ProductController.ProductListByKeywo
 router.get('/ProductListByRemark/:Remark',ProductController.ProductListByRemark)
 router.get('/ProductDetails/:ProductID',ProductController.ProductDetails)
 router.get('/ProductReviewList/:ProductID',ProductController.ProductReviewList)
-
+router.post('/ProductListByFilter',ProductController.ProductListByFilter);
 
 // User
 router.get('/UserOTP/:email',UserController.UserOTP)

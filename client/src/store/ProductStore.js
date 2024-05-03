@@ -74,6 +74,7 @@ const ProductStore=create((set)=>({
     Details:null,
     DetailsRequest:async(id)=>{
         let res=await axios.get(`/api/v1/ProductDetails/${id}`);
+
         if(res.data['status']==="success"){
             set({Details:res.data['data']})
         }

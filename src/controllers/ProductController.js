@@ -1,4 +1,4 @@
-const {CreateReviewService,BrandListService,CategoryListService,SliderListService,ListByCategoryService,ListByBrandService,ListByRemarkService,ListBySmilierService,ListByKeywordService,DetailsService,ReviewListService}=require('../services/ProductServices')
+const {ListByFilterService,CreateReviewService,BrandListService,CategoryListService,SliderListService,ListByCategoryService,ListByBrandService,ListByRemarkService,ListBySmilierService,ListByKeywordService,DetailsService,ReviewListService}=require('../services/ProductServices')
 
 exports.ProductBrandList=async(req,res)=>{
     let result=await BrandListService();
@@ -43,6 +43,10 @@ exports.ProductListByRemark=async(req,res)=>{
     return res.status(200).json(result)
 }
 
+exports.ProductListByFilter=async(req,res)=>{
+    let result=await ListByFilterService(req);
+    return res.status(200).json(result)
+}
 
 exports.ProductDetails=async(req,res)=>{
     let result=await DetailsService(req);
