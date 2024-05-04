@@ -31,6 +31,17 @@ mongoose.connect(URL,option).then((res)=>{
 app.use(cookieParser());
 app.use(cors());
 app.use(helmet());
+
+app.use(
+    helmet.contentSecurityPolicy({
+      useDefaults: true,
+      directives: {
+        "script-src": ["'self'", "'unsafe-inline'", "example.com"],
+        "img-src": ["'self'", "https: data:"]
+      }
+    })
+  )
+
 app.use(mongoSanitize());
 app.use(xss());
 app.use(hpp());
