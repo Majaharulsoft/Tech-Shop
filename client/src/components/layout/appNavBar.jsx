@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import logo from "../../assets/images/plainb-logo.svg"
+import logo from "../../assets/images/techshop.jpeg" 
 import ProductStore from "../../store/ProductStore.js";
 const AppNavBar = () => {
 
@@ -14,10 +14,10 @@ const AppNavBar = () => {
                         <div className="col-md-6">
                             <span>
                                 <span className="f-12">
-                                    <i className="bi bi-envelope"></i> Support@PlanB.com
+                                    <i className="bi bi-envelope"></i> Support@TechShop.com
                                 </span>
                                 <span className="f-12 mx-2">
-                                    <i className="bi bi-envelope"></i> 01774688159
+                                    <i className="bi bi-envelope"></i> 01795970208
                                 </span>
                             </span>
                         </div>
@@ -41,7 +41,7 @@ const AppNavBar = () => {
             <nav className="navbar  sticky-top bg-white navbar-expand-lg navbar-light py-3">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        <img className="img-fluid" src={logo} alt="" width="96px" />
+                        <img className="img-fluid" src={logo} alt="" width="60px" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav06" aria-controls="nav06" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
