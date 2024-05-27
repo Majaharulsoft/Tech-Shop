@@ -13,7 +13,7 @@
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.1",
-    "html-react-parser": "^4.2.2",
+    "html-react-parser": "^4.2.10",
     "js-cookie": "^3.0.5",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
@@ -38,5 +38,4 @@
     "eslint-plugin-react-refresh": "^0.4.1",
     "vite": "^4.4.0"
   }
-  
 }

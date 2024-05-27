@@ -12,6 +12,8 @@ import TermsPage from './pages/terms-page';
 import HowToBuyPage from './pages/how-to-buy-page';
 import ContactPage from './pages/contact-page';
 import ComplainPage from './pages/complain-page';
+import LoginPage from './pages/login-page.jsx';
+import OtpPage from './pages/otp-page.jsx';
 
 
 const App = () => {
@@ -31,6 +33,8 @@ const App = () => {
                 <Route path="/contact" element={<ContactPage/>}/>
                 <Route path="/complain" element={<ComplainPage/>}/>
 
+                <Route path="/login" element={<LoginPage/>}/>
+                <Route path="/otp" element={<OtpPage/>}/>
 
             </Routes>
         </BrowserRouter>

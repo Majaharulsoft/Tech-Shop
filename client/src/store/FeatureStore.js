@@ -17,7 +17,7 @@ const FeatureStore=create((set)=>({
         if(res.data['status']==="success"){
             set({LegalDetails:res.data['data']})
         }
-    }
+    },
 
 
 }))

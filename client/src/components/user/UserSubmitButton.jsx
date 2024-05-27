@@ -1,7 +1,10 @@
 import React from 'react';
+import UserStore from '../../store/UserStore.js';
 
-const SubmitButton = (props) => {
-    if(props.submit===false){
+const UserSubmitButton = (props) => {
+    let {isFormSubmit}=UserStore();
+
+    if(isFormSubmit===false){
         return  <button onClick={props.onClick} type="submit" className={props.className}>{props.text}</button>
     }else {
         return (
@@ -9,4 +12,4 @@ const SubmitButton = (props) => {
         );
     }
 };
-export default SubmitButton;
+export default UserSubmitButton;

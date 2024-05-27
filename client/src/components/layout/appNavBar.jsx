@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import logo from "../../assets/images/techshop.jpeg" 
 import ProductStore from "../../store/ProductStore.js";
+
 const AppNavBar = () => {
 
     const {SetSearchKeyword,SearchKeyword}=ProductStore();
@@ -68,8 +69,9 @@ const AppNavBar = () => {
                         <Link to="/wish" type="button" className="btn ms-2 btn-light d-flex">
                             <i className="bi text-dark bi-heart"></i>
                         </Link>
-                        <Link type="button" className="btn ms-3 btn-success d-flex" to="/profile">Profile</Link>
-                        <Link type="button" className="btn ms-3 btn-success d-flex" to="/profile">Logout</Link>
+
+                        <Link type="button" className="btn ms-3 btn-success d-flex" to="/login">Login</Link>
+                        
                     </div>
                 </div>
             </nav>
