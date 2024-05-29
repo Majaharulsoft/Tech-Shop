@@ -5,7 +5,7 @@ class ValidationHelper{
     }
 
     static IsEmail(value){
-        let EmailRegx =/\s+@\s+\.\s+/;
+        let EmailRegx =/^\S+@\S+\.\S+$/;
         return EmailRegx.test(value);
     }
     static IsMobile(value){

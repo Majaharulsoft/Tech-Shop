@@ -8,7 +8,7 @@ const Layout = (props) => {
         <>
             <AppNavBar/>
             {props.children}
-            <Toaster position ="bottom-center"/>
+            <Toaster position ="top-center"/>
             <Footer/>
         </>
     );

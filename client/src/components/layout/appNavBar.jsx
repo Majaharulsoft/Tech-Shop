@@ -1,13 +1,26 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import logo from "../../assets/images/techshop.jpeg" 
 import ProductStore from "../../store/ProductStore.js";
+import UserStore from '../../store/UserStore.js';
+import UserSubmitButton from '../user/UserSubmitButton.jsx';
+
 
 const AppNavBar = () => {
 
+    const navigate= useNavigate ()
     const {SetSearchKeyword,SearchKeyword}=ProductStore();
+    const {isLogin,UserLogoutRequest}=UserStore();
+    const onLogout=async ()=> {
+        await UserLogoutRequest ();
+        sessionStorage.clear();
+        localStorage.clear();
+        navigate ("/")
 
-    return (
+ 
+    }
+
+    return ( 
         <>
             <div className="container-fluid text-white p-2 bg-success">
                 <div className="container">
@@ -69,8 +82,19 @@ const AppNavBar = () => {
                         <Link to="/wish" type="button" className="btn ms-2 btn-light d-flex">
                             <i className="bi text-dark bi-heart"></i>
                         </Link>
+                         {
 
-                        <Link type="button" className="btn ms-3 btn-success d-flex" to="/login">Login</Link>
+                           isLogin()?(
+                                <>
+                                    <UserSubmitButton onClick={onLogout} text="Logout" className="btn ms-3 btn-success d-flex" /> 
+                                    <Link type="button" className="btn ms-3 btn-success d-flex" to="/login">Profile</Link>
+                                
+                                </>
+                           ):(
+                                <Link type="button" className="btn ms-3 btn-success d-flex" to="/login">Login</Link>
+                           ) 
+                         }   
+                        
                         
                     </div>
                 </div>
