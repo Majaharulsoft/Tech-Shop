@@ -16,11 +16,11 @@ const Features = () => {
                         return (<div key={i} className="col-6 p-2 col-md-3 col-lg-3 col-sm-6">
                             <div className="card shadow-sm">
                                 <div className="card-body">
-                                    <div className="row">
-                                        <div className="col-4  ">
-                                            <img alt="img" className='w-100 h-100 'src={item['img']} />
+                                    <div className="row ">
+                                        <div className="col-5 ">
+                                            <img alt="img" className='w-100 h-100 rounded' src={item['img']} />
                                         </div>
-                                        <div className="col-8">
+                                        <div className="col-7">
                                             <h3 className="bodyXLarge">{item['name']}</h3>
                                             <span className="bodySmal">{item['description']}</span>
                                         </div>
