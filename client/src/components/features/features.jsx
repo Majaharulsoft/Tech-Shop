@@ -17,10 +17,10 @@ const Features = () => {
                             <div className="card shadow-sm">
                                 <div className="card-body">
                                     <div className="row ">
-                                        <div className="col-6 ">
+                                        <div className="col-5 ">
                                             <img alt="img" className='w-100 h-100 rounded' src={item['img']} />
                                         </div>
-                                        <div className="col-6">
+                                        <div className="col-7">
                                             <h3 className="bodyXLarge">{item['name']}</h3>
                                             <span className="bodySmal">{item['description']}</span>
                                         </div>
