@@ -17,7 +17,7 @@ const Features = () => {
                             <div className="card shadow-sm">
                                 <div className="card-body">
                                     <div className="row ">
-                                        <div className="col-5 h-100 ">
+                                        <div className="col-5">
                                             <img alt="img" className='w-100 h-100 rounded' src={item['img']} />
                                         </div>
                                         <div className="col-7">
