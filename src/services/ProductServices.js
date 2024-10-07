@@ -319,5 +319,6 @@ module.exports={
     DetailsService,
     ReviewListService,
     CreateReviewService,
+    ListByFilterService,
     
 }
